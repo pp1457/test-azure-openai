@@ -18,4 +18,6 @@ response = client.embeddings.create(
     model= model_name
 )
 
-print(response.model_dump_json(indent=2))
+print(response)
+
+print(response.data[0].embedding)
